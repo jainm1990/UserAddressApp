@@ -1,0 +1,48 @@
+User - UserId, Name, 
+
+Address - AddressId, userId, Address
+
+
+Model - User.java, Address.java
+
+Service - 
+
+Get /users - Get the list of users
+
+Get /user/id - this will return all the address of a user
+
+post /user - it will create a user
+
+create/update post /user/address/userId 
+
+delete delete /user/address/addressId 
+
+{
+   "address": "Kanadia road"
+}
+
+
+
+docker pull postgres:alpine  - to take pull of postgres image from docker hun
+
+docker images -- to see the downloaded images
+
+docker run --name postgres-test -e POSTGRES_PASSWORD=root -d -p 5432:5432 postgres:alpine
+
+docker ps -- to see list if container 
+
+docker exec -it postgres-test bash      (execute bash command this will bring you inside the container)
+
+pwd
+ls
+
+psql -U postgres    (in postgres user)
+
+\du ( to check user)
+
+create database test;
+
+\l list databases
+\c test ( connect with test databease)
+
+\d find relations
